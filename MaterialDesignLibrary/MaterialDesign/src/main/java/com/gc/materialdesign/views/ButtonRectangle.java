@@ -14,9 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class ButtonRectangle extends Button {
-	
-	TextView textButton;
-	
+		
 	int paddingTop,paddingBottom, paddingLeft, paddingRight;
 	
 	
@@ -82,7 +80,6 @@ public class ButtonRectangle extends Button {
 			text = attrs.getAttributeValue(ANDROIDXML,"text");
 		}
 		if(text != null){
-			textButton = new TextView(getContext());
 			textButton.setText(text);
 			textButton.setTextColor(Color.WHITE);
 			textButton.setTypeface(null, Typeface.BOLD);
